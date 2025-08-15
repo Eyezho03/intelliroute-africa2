@@ -1,0 +1,34 @@
+const nodemailer = require('nodemailer');
+const logger = require('./logger');
+
+const sendEmail = async (options) => {
+  // Create transporter
+  const transporter = nodemailer.createTransporter({
+    host: process.env.EMAIL_HOST,
+    port: process.env.EMAIL_PORT,
+    secure: false, // true for 465, false for other ports
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS
+    }
+  });
+
+  // Define email options
+  const mailOptions = {
+    from: `IntelliRoute Africa <${process.env.EMAIL_USER}>`,
+    to: options.email,
+    subject: options.subject,
+    html: options.message
+  };
+
+  try {
+    const info = await transporter.sendMail(mailOptions);
+    logger.info(`Email sent: ${info.messageId}`);
+    return info;
+  } catch (error) {
+    logger.error(`Email send failed: ${error.message}`);
+    throw error;
+  }
+};
+
+module.exports = sendEmail;

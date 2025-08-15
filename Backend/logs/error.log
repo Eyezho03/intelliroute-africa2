@@ -1,0 +1,148 @@
+2025-08-11 22:24:54:2454 [ERROR]: MongoDB connection error: bad auth : Authentication failed.
+2025-08-11 22:36:30:3630 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5000
+2025-08-12 22:28:28:2828 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5000
+2025-08-12 22:51:00:510 [ERROR]: Get user error: Cast to ObjectId failed for value "profile" (type string) at path "_id" for model "User"
+2025-08-12 22:51:00:510 [ERROR]: Cast to ObjectId failed for value "profile" (type string) at path "_id" for model "User" - GET /api/users/profile - ::1
+2025-08-12 22:53:05:535 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2025-08-12 22:53:17:5317 [ERROR]: Email send error: nodemailer.createTransporter is not a function
+2025-08-12 22:53:32:5332 [ERROR]: Auth middleware error:
+2025-08-12 22:53:46:5346 [ERROR]: Auth middleware error:
+2025-08-12 22:55:00:550 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2025-08-12 22:55:14:5514 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2025-08-12 22:55:30:5530 [ERROR]: Email send error: nodemailer.createTransporter is not a function
+2025-08-12 23:43:37:4337 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:43:37:4337 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:43:46:4346 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/auth/login - ::1
+2025-08-12 23:44:06:446 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:44:14:4414 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/auth/register - ::1
+2025-08-12 23:44:37:4437 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:44:45:4445 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/auth/login - ::1
+2025-08-12 23:45:08:458 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:45:16:4516 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/auth/login - ::1
+2025-08-12 23:45:37:4537 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:46:07:467 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:46:37:4637 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:47:43:4743 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:48:29:4829 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/auth/login - ::1
+2025-08-12 23:48:43:4843 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:49:09:499 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/auth/register - ::1
+2025-08-12 23:49:10:4910 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:49:10:4910 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:49:10:4910 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/analytics/dashboard - ::1
+2025-08-12 23:49:10:4910 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/analytics/dashboard - ::1
+2025-08-12 23:49:11:4911 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/notifications - ::1
+2025-08-12 23:49:11:4911 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/notifications - ::1
+2025-08-12 23:49:26:4926 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:49:26:4926 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:49:27:4927 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/analytics/dashboard - ::1
+2025-08-12 23:49:27:4927 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/analytics/dashboard - ::1
+2025-08-12 23:49:27:4927 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/notifications - ::1
+2025-08-12 23:49:27:4927 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/notifications - ::1
+2025-08-12 23:49:30:4930 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:49:30:4930 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:49:31:4931 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/analytics/dashboard - ::1
+2025-08-12 23:49:31:4931 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/analytics/dashboard - ::1
+2025-08-12 23:49:31:4931 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/notifications - ::1
+2025-08-12 23:49:31:4931 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/notifications - ::1
+2025-08-12 23:49:43:4943 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:50:43:5043 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:51:44:5144 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:52:44:5244 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:53:43:5343 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:54:44:5444 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:55:44:5544 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:56:44:5644 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:57:43:5743 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:58:43:5843 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-12 23:59:43:5943 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:00:43:043 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:01:43:143 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:02:44:244 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:03:43:343 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:04:43:443 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:05:43:543 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:06:43:643 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:07:44:744 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:08:43:843 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:16:27:1627 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:16:43:1643 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:17:44:1744 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:18:44:1844 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:18:49:1849 [ERROR]: Email send error: nodemailer.createTransporter is not a function
+2025-08-13 00:19:44:1944 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:20:43:2043 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:21:44:2144 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:22:43:2243 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:23:43:2343 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:24:43:2443 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:25:44:2544 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:26:44:2644 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:27:43:2743 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:29:02:292 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:29:44:2944 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:30:44:3044 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:31:43:3143 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:32:44:3244 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:33:44:3344 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:34:44:3444 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:35:44:3544 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:36:44:3644 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:37:44:3744 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:38:43:3843 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:39:44:3944 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:40:44:4044 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:41:44:4144 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:42:43:4243 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:43:44:4344 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:44:43:4443 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:45:43:4543 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:46:44:4644 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:47:44:4744 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:48:44:4844 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:49:44:4944 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:50:44:5044 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:51:44:5144 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:52:44:5244 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:53:44:5344 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:54:44:5444 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 00:55:44:5544 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:30:16:3016 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:30:16:3016 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:32:43:3243 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:33:44:3344 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:34:44:3444 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:35:43:3543 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:36:43:3643 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:37:44:3744 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:38:43:3843 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:39:44:3944 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:40:44:4044 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:41:43:4143 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:42:44:4244 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:43:43:4343 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:44:44:4444 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:45:44:4544 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:46:43:4643 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:47:44:4744 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:48:43:4843 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:49:43:4943 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:50:43:5043 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:51:43:5143 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:52:43:5243 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:53:44:5344 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:54:43:5443 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:55:43:5543 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:56:46:5646 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:57:43:5743 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:58:43:5843 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 08:59:44:5944 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 09:00:43:043 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 09:01:43:143 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 09:02:43:243 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 09:03:43:343 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 09:04:43:443 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 09:05:43:543 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 09:06:43:643 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 09:07:44:744 [ERROR]: The CORS policy for this site does not allow access from the specified Origin. - OPTIONS /api/health - ::1
+2025-08-13 12:06:22:622 [ERROR]: Uncaught Exception: listen EADDRINUSE: address already in use :::5001
+2025-08-15 23:27:47:2747 [ERROR]: Uncaught Exception: listen EACCES: permission denied 5002cdcd

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntelliRoute Africa - Backend Connection Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .status {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .success {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        .error {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        .pending {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 IntelliRoute Africa - Backend Connection Test</h1>
+        
+        <div id="status" class="status pending">
+            🔄 Ready to test connection...
+        </div>
+
+        <div>
+            <button onclick="testHealthCheck()">Test Health Check</button>
+            <button onclick="testAuthEndpoint()">Test Auth Endpoint</button>
+            <button onclick="testOrdersEndpoint()">Test Orders Endpoint</button>
+            <button onclick="testAllEndpoints()">Test All Endpoints</button>
+        </div>
+
+        <div id="results">
+            <h3>Test Results:</h3>
+            <div id="results-content"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:5000/api';
+        const BACKEND_URL = 'http://localhost:5000';
+
+        function updateStatus(message, type = 'pending') {
+            const statusDiv = document.getElementById('status');
+            statusDiv.className = `status ${type}`;
+            statusDiv.innerHTML = message;
+        }
+
+        function addResult(endpoint, status, response) {
+            const resultsContent = document.getElementById('results-content');
+            const resultDiv = document.createElement('div');
+            resultDiv.className = `status ${status === 'success' ? 'success' : 'error'}`;
+            resultDiv.innerHTML = `
+                <h4>${endpoint}</h4>
+                <p><strong>Status:</strong> ${status}</p>
+                <pre>${JSON.stringify(response, null, 2)}</pre>
+            `;
+            resultsContent.appendChild(resultDiv);
+        }
+
+        async function makeRequest(url, options = {}) {
+            try {
+                const response = await fetch(url, {
+                    headers: {
+                        'Content-Type': 'application/json',
+                        ...options.headers
+                    },
+                    ...options
+                });
+
+                const data = await response.json();
+                return {
+                    success: response.ok,
+                    status: response.status,
+                    data: data
+                };
+            } catch (error) {
+                return {
+                    success: false,
+                    error: error.message
+                };
+            }
+        }
+
+        async function testHealthCheck() {
+            updateStatus('🔄 Testing health check endpoint...', 'pending');
+            
+            const result = await makeRequest(`${BACKEND_URL}/health`);
+            
+            if (result.success) {
+                updateStatus('✅ Backend is healthy and responding!', 'success');
+                addResult('GET /health', 'success', result.data);
+            } else {
+                updateStatus('❌ Health check failed!', 'error');
+                addResult('GET /health', 'error', result);
+            }
+        }
+
+        async function testAuthEndpoint() {
+            updateStatus('🔄 Testing authentication endpoint...', 'pending');
+            
+            // This should return 401 unauthorized, which means it's working
+            const result = await makeRequest(`${API_BASE_URL}/auth/me`);
+            
+            if (result.status === 401 || (result.data && result.data.message && result.data.message.includes('authorized'))) {
+                updateStatus('✅ Auth endpoint is working (returns 401 as expected)!', 'success');
+                addResult('GET /api/auth/me', 'success', { message: 'Endpoint working - returns 401 unauthorized as expected' });
+            } else {
+                addResult('GET /api/auth/me', 'error', result);
+            }
+        }
+
+        async function testOrdersEndpoint() {
+            updateStatus('🔄 Testing orders endpoint...', 'pending');
+            
+            // This should return 401 unauthorized, which means it's working
+            const result = await makeRequest(`${API_BASE_URL}/orders`);
+            
+            if (result.status === 401 || (result.data && result.data.message && result.data.message.includes('authorized'))) {
+                updateStatus('✅ Orders endpoint is working (returns 401 as expected)!', 'success');
+                addResult('GET /api/orders', 'success', { message: 'Endpoint working - returns 401 unauthorized as expected' });
+            } else {
+                addResult('GET /api/orders', 'error', result);
+            }
+        }
+
+        async function testAllEndpoints() {
+            updateStatus('🔄 Testing all endpoints...', 'pending');
+            document.getElementById('results-content').innerHTML = '';
+
+            const endpoints = [
+                { path: '/health', name: 'Health Check', requiresAuth: false },
+                { path: '/api/auth/me', name: 'Auth Me', requiresAuth: true },
+                { path: '/api/orders', name: 'Orders', requiresAuth: true },
+                { path: '/api/vehicles', name: 'Vehicles', requiresAuth: true },
+                { path: '/api/routes', name: 'Routes', requiresAuth: true },
+                { path: '/api/inventory', name: 'Inventory', requiresAuth: true },
+                { path: '/api/users', name: 'Users', requiresAuth: true },
+                { path: '/api/analytics/dashboard', name: 'Analytics', requiresAuth: true }
+            ];
+
+            let successCount = 0;
+            
+            for (const endpoint of endpoints) {
+                const url = endpoint.path.startsWith('/api') ? 
+                    `${BACKEND_URL}${endpoint.path}` : 
+                    `${BACKEND_URL}${endpoint.path}`;
+                    
+                const result = await makeRequest(url);
+                
+                if (endpoint.requiresAuth) {
+                    // For protected endpoints, 401 is expected and means it's working
+                    if (result.status === 401 || (result.data && result.data.message && result.data.message.includes('authorized'))) {
+                        addResult(`GET ${endpoint.path}`, 'success', { message: 'Endpoint working - protected route returns 401 as expected' });
+                        successCount++;
+                    } else {
+                        addResult(`GET ${endpoint.path}`, 'error', result);
+                    }
+                } else {
+                    // For public endpoints, 200 is expected
+                    if (result.success) {
+                        addResult(`GET ${endpoint.path}`, 'success', result.data);
+                        successCount++;
+                    } else {
+                        addResult(`GET ${endpoint.path}`, 'error', result);
+                    }
+                }
+                
+                // Add small delay between requests
+                await new Promise(resolve => setTimeout(resolve, 200));
+            }
+            
+            updateStatus(`✅ Test completed! ${successCount}/${endpoints.length} endpoints working correctly`, 'success');
+        }
+
+        // Test connection on page load
+        window.onload = function() {
+            testHealthCheck();
+        };
+    </script>
+</body>
+</html>
